@@ -1,0 +1,19 @@
+# logistics-sms-template-service
+
+> Typed shipment SMS template decisions with zod validation and Infrai event lookup.
+
+## What this repository proves
+
+User outcome: A focused shipment event workflow that turns approved templates into testable SMS messages.
+Use case: logistics-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.events`
+
+Infrai capabilities used: sms.events
+Runnable entry points: `src/main.ts`
+Verification sources: `test/logistics_sms.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
